@@ -1,2 +1,3 @@
-# Portfolio-peperechas
-Repositorio General de habilidades, lenguajes de programacion, herramientas que maneja la organizacion de peperechas
+# Portfolio Kuskat Labs
+
+Repositorio general de habilidades, lenguajes de programación y herramientas de desarrollo del equipo de Kuskat Labs.

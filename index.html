@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuskat Labs — Dev Portfolio</title>
+  <meta name="description" content="Equipo de desarrollo. Habilidades reales, código en producción, gente que entrega." />
+
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav role="navigation" aria-label="Navegación principal">
+    <div class="nav-logo" id="nav-logo">
+      kuskat<span>labs</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#team">team</a></li>
+      <li><a href="#projects">proyectos</a></li>
+      <li><a href="https://github.com" target="_blank" rel="noopener" aria-label="Organización de GitHub de Kuskat Labs">github</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <header class="hero" role="banner">
+    <!-- Glow effect behind hero -->
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <p class="hero-eyebrow">Colectivo de ingeniería</p>
+
+    <h1 class="hero-title">
+      we build
+      <span class="line-accent">kuskat labs</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Un colectivo de developers que construye software con intención.
+      Sin humo, sin buzzwords — solo código limpio que escala.
+    </p>
+
+    <div class="hero-stats" role="list" aria-label="Estadísticas del equipo">
+      <div class="stat" role="listitem">
+        <div class="stat-number"><span id="member-count">0</span></div>
+        <div class="stat-label">miembros</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-number"><span id="skill-count">0</span></div>
+        <div class="stat-label">skills</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="stat-number"><span id="project-count">0</span></div>
+        <div class="stat-label">proyectos</div>
+      </div>
+    </div>
+
+    <a href="#team" class="hero-scroll" aria-label="Desplazarse al equipo">
+      <span class="scroll-text">scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </header>
+
+  <main>
+    <!-- ── TEAM SECTION ── -->
+    <section class="section" id="team" aria-labelledby="team-heading">
+      <div class="section-header">
+        <span class="section-label" aria-hidden="true">01</span>
+        <h2 class="section-title" id="team-heading">el equipo</h2>
+      </div>
+
+      <!-- Filter bar -->
+      <div class="filter-bar" id="filter-bar" role="toolbar" aria-label="Filtrar por tecnología"></div>
+
+      <!-- Grid -->
+      <div class="members-grid" id="members-grid" role="list" aria-label="Miembros del equipo">
+        <!-- Cards injected by JS -->
+      </div>
+    </section>
+
+    <!-- ── PROJECTS SECTION ── -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="section-header">
+        <span class="section-label" aria-hidden="true">02</span>
+        <h2 class="section-title" id="projects-heading">proyectos destacados</h2>
+      </div>
+
+      <!-- Grid de proyectos -->
+      <div class="projects-grid" id="projects-grid" role="list" aria-label="Proyectos del equipo">
+        <!-- Inyectados por JS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-logo">kuskat<span>labs</span></div>
+    <p class="footer-tagline">built with intention &amp; caffeine</p>
+  </footer>
+
+  <!-- Data + Scripts -->
+  <script src="data/members.js"></script>
+  <!-- Nuevo archivo para los datos de proyectos -->
+  <script src="data/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
