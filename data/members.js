@@ -6,7 +6,7 @@ const MEMBERS = [
       es: "Desarrollador backend/Fronted",
       en: "Developer"
     },
-    avatar: "/img/antony-img.jpeg",
+    avatar: "img/antony-img.jpeg",
     color: "#4F46E5",
     bio: {
       es: "Arquitectura de sistemas escalables desde el caos hasta la armonía.",
@@ -27,7 +27,7 @@ const MEMBERS = [
       es: "Desarrollador Back-End",
       en: "Back-end Developer"
     },
-    avatar: "/img/andres-img.jpeg",
+    avatar: "img/andres-img.jpeg",
     color: "#7C3AED",
     bio: {
       es: "APIs robustas, bases de datos optimizadas, infraestructura sólida.",
@@ -47,7 +47,7 @@ const MEMBERS = [
       es: "Desarrollador ",
       en: "Web Developer"
     },
-    avatar: "/img/juancarlos-img.png",
+    avatar: "img/juancarlos-img.png",
     color: "#0284C7",
     bio: {
       es: "Creando aplicaciones web modernas, rápidas y escalables con Next.js, React y TypeScript.",
@@ -67,7 +67,7 @@ const MEMBERS = [
       es: "Desarrollador Front End",
       en: "Web DeskTop"
     },
-    avatar: "/img/abel-img.jpeg",
+    avatar: "img/abel-img.jpeg",
     color: "#DC2626",
     bio: {
       es: "Un diseñador Web y Diseñador de aplicaciónes que trabaja excelente en grupo",
