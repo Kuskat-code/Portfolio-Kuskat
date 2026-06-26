@@ -156,8 +156,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // Top part: avatar + name/role
       const top = document.createElement('div');
       top.className = 'card-top';
+      const isImg = m.avatar && (m.avatar.includes('.') || m.avatar.includes('/'));
+      const avatarContent = isImg 
+        ? `<img src="${m.avatar}" alt="${m.name}">` 
+        : m.avatar;
       top.innerHTML = `
-        <div class="avatar">${m.avatar}</div>
+        <div class="avatar">${avatarContent}</div>
         <div>
           <h3 class="card-name">
             ${m.name}
