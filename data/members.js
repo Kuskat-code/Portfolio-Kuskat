@@ -1,47 +1,48 @@
 const MEMBERS = [
   {
     id: 1,
-    name: "Alex Pérez",
+    name: "Anthony Sigarán",
     role: {
-      es: "Desarrollador Full Stack",
-      en: "Full Stack Developer"
+      es: "Desarrollador backend/Fronted",
+      en: "Developer"
     },
-    avatar: "AP",
+    avatar: "AS",
     color: "#4F46E5",
     bio: {
       es: "Arquitectura de sistemas escalables desde el caos hasta la armonía.",
       en: "Architecting scalable systems from chaos to harmony."
     },
-    skills: ["React", "Node.js", "PostgreSQL", "Docker", "TypeScript"],
+    skills: ["Java", "Next.js", "PostgreSQL", "Docker", "Linux", "TypeScript", "Docker"],
     contact: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      email: "alex@kuskatlabs.dev"
+      github: "https://github.com/MN03SGO",
+      linkedin: "https://www.linkedin.com/in/manuel-sigarán",
+      portafolio: "https://mn03sgo.github.io/Portafolio/",
+      email: "mn03sgo@proton.me"
     }
   },
   {
     id: 2,
-    name: "María Rodríguez",
+    name: "Carlos Ansorge",
     role: {
-      es: "Diseñadora UI/UX y Frontend",
-      en: "UI/UX & Frontend Designer"
+      es: "Desarrollador Back-End",
+      en: "Back-end Developer"
     },
-    avatar: "MR",
+    avatar: "CA",
     color: "#7C3AED",
     bio: {
-      es: "Píxeles con propósito. Diseño que habla antes de que el usuario interactúe.",
-      en: "Pixels with purpose. Design that speaks before the user interacts."
+      es: "APIs robustas, bases de datos optimizadas, infraestructura sólida.",
+      en: "Robust APIs, optimized databases, solid infrastructure."
     },
-    skills: ["Figma", "Vue.js", "TailwindCSS", "Motion", "A11y"],
+    skills: ["Python", "Flask", "Supabase", "MongoDB", "Nex.Js"],
     contact: {
-      github: "https://github.com",
+      github: "https://github.com/Andres-007",
       linkedin: "https://linkedin.com",
-      email: "maria@kuskatlabs.dev"
+      email: "ansorgecarlos9@proton.me"
     }
   },
   {
     id: 3,
-    name: "Carlos Méndez",
+    name: "Juan Ramos",
     role: {
       es: "Ingeniero Backend",
       en: "Backend Engineer"
