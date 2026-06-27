@@ -12,7 +12,7 @@ const MEMBERS = [
       es: "Arquitectura de sistemas escalables desde el caos hasta la armonía.",
       en: "Architecting scalable systems from chaos to harmony."
     },
-    skills: ["Java", "Next.js", "PostgreSQL", "Docker", "Linux", "TypeScript", "Docker"],
+    skills: ["Java", "Next.js", "PostgreSQL", "Docker", "Linux", "TypeScript"],
     contact: {
       github: "https://github.com/MN03SGO",
       linkedin: "https://www.linkedin.com/in/manuel-sigarán",
@@ -33,7 +33,7 @@ const MEMBERS = [
       es: "APIs robustas, bases de datos optimizadas, infraestructura sólida.",
       en: "Robust APIs, optimized databases, solid infrastructure."
     },
-    skills: ["Python", "Flask", "Supabase", "MongoDB", "Nex.Js"],
+    skills: ["Python", "Flask", "Supabase", "MongoDB", "Next.js"],
     contact: {
       github: "https://github.com/Andres-007",
       linkedin: "https://linkedin.com",
@@ -73,7 +73,7 @@ const MEMBERS = [
       es: "Un diseñador Web y Diseñador de aplicaciónes que trabaja excelente en grupo",
       en: "A web designer and app designer who works excellently in a team"
     },
-    skills: ["React Native", "Frame Work Astro", "Tailwind", "Seguridad con JWS",],
+    skills: ["React Native", "Astro", "Tailwind CSS", "Seguridad con JWS"],
     contact: {
       github: "https://github.com/capo-byte",
       linkedin: "en proceso",

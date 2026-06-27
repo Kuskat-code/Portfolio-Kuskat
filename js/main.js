@@ -3,7 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.getElementById('members-grid');
-  const filterBar = document.getElementById('filter-bar');
+  const carouselTrack = document.getElementById('skills-carousel-track');
   const projectsGrid = document.getElementById('projects-grid');
 
   // ── DICCIONARIO DE TRADUCCIONES ──
@@ -134,19 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
    * Render member cards based on the selected language and filter.
    * @param {string} filter - optional search term to filter members.
    */
-  function renderMembers(filter = '') {
+  function renderMembers() {
     grid.innerHTML = '';
 
-    const term = filter.trim().toLowerCase();
-    const filtered = MEMBERS.filter(m => {
-      if (!term) return true;
-      const inName = m.name.toLowerCase().includes(term);
-      const inRole = m.role[lang].toLowerCase().includes(term);
-      const inSkills = m.skills.some(s => s.toLowerCase().includes(term));
-      return inName || inRole || inSkills;
-    });
-
-    filtered.forEach((m, index) => {
+    MEMBERS.forEach((m, index) => {
       const card = document.createElement('div');
       card.className = 'card fade-in';
       
@@ -257,36 +248,34 @@ document.addEventListener('DOMContentLoaded', () => {
     skillCountEl.textContent = uniq.size;
   }
 
-  // Generate filter buttons dynamically
-  if (filterBar) {
-    filterBar.innerHTML = '';
-
-    const makeBtn = (label, filterValue) => {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'filter-btn';
-      if (filterValue === '') btn.classList.add('active');
-      btn.textContent = label;
-      
-      btn.addEventListener('click', () => {
-        filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        renderMembers(filterValue);
-      });
-      return btn;
-    };
-
-    // Add translated "All" button
-    filterBar.appendChild(makeBtn(t.allFilter, ''));
+  // Generate skills carousel dynamically
+  if (carouselTrack) {
+    carouselTrack.innerHTML = '';
 
     // Gather and sort skills alphabetically
     const skillSet = new Set();
-    MEMBERS.forEach(m => m.skills.forEach(s => skillSet.add(s)));
+    MEMBERS.forEach(m => m.skills.forEach(s => {
+      if (s) skillSet.add(s.trim());
+    }));
     const skills = Array.from(skillSet).sort((a, b) => a.localeCompare(b));
+
+    // Create Group 1
+    const group1 = document.createElement('div');
+    group1.className = 'skills-carousel-group';
     
     skills.forEach(skill => {
-      filterBar.appendChild(makeBtn(skill, skill));
+      const item = document.createElement('span');
+      item.className = 'skill-carousel-item';
+      item.textContent = skill;
+      group1.appendChild(item);
     });
+
+    // Create Group 2 (duplicate for infinite scroll)
+    const group2 = group1.cloneNode(true);
+    group2.setAttribute('aria-hidden', 'true');
+
+    carouselTrack.appendChild(group1);
+    carouselTrack.appendChild(group2);
   }
 
   // Smooth scroll logic for nav logo
