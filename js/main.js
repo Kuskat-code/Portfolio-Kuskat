@@ -219,12 +219,16 @@ document.addEventListener('DOMContentLoaded', () => {
           ${p.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
         </div>
         <div class="project-links">
-          <a href="${p.links.github}" target="_blank" rel="noopener" aria-label="${t.codeLink} ${p.title}" class="project-link">
-            ${t.codeLink}
-          </a>
-          <a href="${p.links.live}" target="_blank" rel="noopener" aria-label="${t.demoLink} ${p.title}" class="project-link">
-            ${t.demoLink}
-          </a>
+          ${p.links && p.links.github ? `
+            <a href="${p.links.github}" target="_blank" rel="noopener" aria-label="${t.codeLink} ${p.title}" class="project-link">
+              ${t.codeLink}
+            </a>
+          ` : ''}
+          ${p.links && p.links.live ? `
+            <a href="${p.links.live}" target="_blank" rel="noopener" aria-label="${t.demoLink} ${p.title}" class="project-link">
+              ${t.demoLink}
+            </a>
+          ` : ''}
         </div>
       `;
       projectsGrid.appendChild(pCard);
