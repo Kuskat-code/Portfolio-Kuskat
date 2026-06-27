@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── DICCIONARIO DE TRADUCCIONES ──
   const TRANSLATIONS = {
     es: {
-      docTitle: "Kuskat Labs — Portafolio de Desarrollo",
+      docTitle: "Kuskat Labs",
       metaDesc: "Equipo de desarrollo. Habilidades reales, código en producción, gente que entrega.",
       navTeam: "equipo",
       navProjects: "proyectos",
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       emailLabel: "Correo"
     },
     en: {
-      docTitle: "Kuskat Labs — Dev Portfolio",
+      docTitle: "Kuskat Labs",
       metaDesc: "Development team. Real skills, code in production, people who deliver.",
       navTeam: "team",
       navProjects: "projects",
